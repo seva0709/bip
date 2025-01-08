@@ -10,8 +10,27 @@
     font-weight: bold;
     color: #ff00ff;
     padding-bottom: 30px;
-}
-.skidki{
+    background: linear-gradient(90deg, #d400ff, #f91af9, #8800d1, #ff00ff, );
+    background-size: 200%;
+    -webkit-mask-image: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+    mask-image: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    animation: mask-slide 2s infinite linear;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  @keyframes mask-slide {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
+  }
+.skidki{    
     display: grid;
     color: red;
     justify-content: end;
